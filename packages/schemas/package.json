@@ -1,0 +1,47 @@
+{
+  "name": "@jsume/schemas",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Schemas for JSUME",
+  "author": "Moozon",
+  "license": "MIT",
+  "homepage": "https://github.com/jsume/jsume/tree/main/packages/schemas#readme",
+  "bugs": {
+    "url": "https://github.com/jsume/jsume/issues"
+  },
+  "keywords": [
+    "JSON",
+    "json",
+    "schema",
+    "jsume",
+    "json-resume",
+    "resume"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./*.json": "./dist/*.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run build:zod && pnpm run build:json",
+    "build:zod": "tsdown",
+    "build:json": "esno ./src/json/genJsonSchema.ts",
+    "dev": "tsdown --watch"
+  },
+  "devdependencies": {
+    "zod": "catalog:utils"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
