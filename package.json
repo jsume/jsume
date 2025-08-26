@@ -1,0 +1,42 @@
+{
+  "name": "@jsume/monorepo",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "prepare": "esno scripts/prepare.ts",
+    "build": "pnpm -r --filter=./packages/* run build",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "release": "bumpp -r --excute=\"pnpm i\"",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.2.1",
+    "@types/node": "^24.3.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "bumpp": "^10.2.3",
+    "eslint": "^9.34.0",
+    "esno": "*",
+    "execa": "^9.6.0",
+    "lint-staged": "^16.1.5",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.14.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "zod": "^4.1.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx esno scripts/prepare.ts && npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,md}": [
+      "eslint --cache --fix"
+    ]
+  }
+}
