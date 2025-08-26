@@ -1,0 +1,39 @@
+packages:
+  - packages/*
+
+catalogs:
+
+  build:
+    bumpp: ^10.2.3
+    tsdown: ^0.14.2
+
+  eslint:
+    '@antfu/eslint-config': ^5.2.1
+    eslint: ^9.34.0
+
+  testing:
+    vitest: ^3.2.4
+
+  types:
+    '@types/node': ^24.3.0
+
+  typescript:
+    typescript: ^5.9.2
+
+  utils:
+    ajv: ^8.17.1
+    ajv-formats: ^3.0.1
+    ansis: ^4.1.0
+    cac: ^6.7.14
+    esno: '*'
+    execa: ^9.6.0
+    lint-staged: ^16.1.5
+    restore-cursor: ^5.1.0
+    simple-git-hooks: ^2.13.1
+    terminal-link: ^4.0.0
+    tinyglobby: ^0.2.14
+    zod: ^4.1.4
+
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks

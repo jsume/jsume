@@ -1,0 +1,94 @@
+{
+  "basics": {
+    "name": "",
+    "label": "",
+    "image": "",
+    "email": "",
+    "phone": "",
+    "url": "",
+    "summary": "",
+    "location": "",
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "",
+      "location": "",
+      "position": "",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "website": "",
+      "githubUrl": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "releaseDate": "",
+      "publisher": "",
+      "summary": "",
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "location": "",
+      "major": "",
+      "degree": "",
+      "gpa": 0,
+      "startDate": "",
+      "endDate": "",
+      "activities": [],
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "",
+      "issueDate": "",
+      "expDate": "",
+      "issuer": "",
+      "url": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": "",
+      "description": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "",
+      "fluency": ""
+    }
+  ]
+}

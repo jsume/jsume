@@ -1,0 +1,35 @@
+{
+  "name": "@jsume/cli",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "CLI for JSUME",
+  "author": "Moozon",
+  "license": "MIT",
+  "keywords": [
+    "jsume",
+    "json-resume",
+    "resume",
+    "cli"
+  ],
+  "bin": {
+    "jsume": "bin/jsume.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "dependencies": {
+    "@jsume/schemas": "workspace:*",
+    "ansis": "catalog:utils",
+    "cac": "catalog:utils",
+    "restore-cursor": "catalog:utils",
+    "terminal-link": "catalog:utils",
+    "tinyglobby": "catalog:utils"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
