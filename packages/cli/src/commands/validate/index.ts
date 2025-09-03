@@ -65,7 +65,7 @@ export function validate(
     }
     if (!successFlag) {
       // show user readme link for more information
-      console.log(`\n${c.a.dim.whiteBright(tlink('🔗 Learn more about jsume JSON file', 'https://github.com/jsume/jsume/blob/main/packages/schemas/README.md'))}\n`)
+      console.log(`\n${c.a.dim.whiteBright(tlink('🔗 Learn more about jsume JSON file', 'https://github.com/jsume/jsume/tree/main/packages/schemas#readme'))}\n`)
     }
   })
 }

@@ -6,6 +6,11 @@
   "author": "Moozon",
   "license": "MIT",
   "homepage": "https://github.com/jsume/jsume/tree/main/packages/schemas#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsume/jsume.git",
+    "directory": "packages/schemas"
+  },
   "bugs": {
     "url": "https://github.com/jsume/jsume/issues"
   },

@@ -5,6 +5,15 @@
   "description": "CLI for JSUME",
   "author": "Moozon",
   "license": "MIT",
+  "homepage": "https://github.com/jsume/jsume/tree/main/packages/cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsume/jsume.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/jsume/jsume/issues"
+  },
   "keywords": [
     "jsume",
     "json-resume",
