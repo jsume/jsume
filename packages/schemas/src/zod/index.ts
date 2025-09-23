@@ -41,6 +41,7 @@ export type Jsume = z.infer<typeof jsumeSchema>
 export type { AwardsType } from './awards.schema'
 export type { BasicsType } from './basics.schema'
 export type { CertificatesType } from './certificates.schema'
+export type { DateObjType, DateType, EndDateType, LocationType } from './common.schema'
 export type { EducationType } from './educations.schema'
 export type { LanguagesType } from './languages.schema'
 export type { ProjectsType } from './projects.schema'
