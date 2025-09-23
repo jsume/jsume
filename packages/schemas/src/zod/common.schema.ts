@@ -49,7 +49,7 @@ export const locationSchema = z.union([
 })
 export type LocationType = z.infer<typeof locationSchema>
 
-const dateObjSchema = z.object({
+export const dateObjSchema = z.object({
   year: z.number().int().min(1900, 'Year must be at least 1900').meta({
     description: 'Year of the date',
   }),
