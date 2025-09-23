@@ -25,17 +25,18 @@ export function refineDate<
         path: ['endDate'],
       })
     }
-    const [s, e] = [data.startDate, data.endDate]
-    Object.keys(e).forEach((key) => {
-      const k = key as keyof typeof e
-      if (s[k] && e[k] && s[k] > e[k]) {
+    else {
+      const [s, e] = [data.startDate, data.endDate]
+      const sNum = s.year * 10000 + (s.month ?? 0) * 100 + (s.day ?? 0)
+      const eNum = e.year * 10000 + (e.month ?? 0) * 100 + (e.day ?? 0)
+      if (sNum > eNum) {
         ctx.addIssue({
           code: 'custom',
           message: 'End date should be greater than or equal to start date',
           path: ['endDate'],
         })
       }
-    })
+    }
   }
   else if (typeof data.startDate === 'string' && typeof data.endDate === 'string') {
     if (data.startDate > data.endDate) {
