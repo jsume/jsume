@@ -369,7 +369,7 @@ There are some special data types in the schema that you should be aware of at t
     | title | `string` | ✅ | The title of the award or honor | `"Employee of the month"` |
     | date | `date` | ✅ | Date when the award or honor was received | `{"year": 2023, "month": 1, "day": 1}` |
     | awarder | `string` | ✅ | Organization or individual who granted the award or honor | `"Tech Company Inc."` |
-    | summary | `string` | ✅ | Summary of the award or honor | `"Awarded for outstanding performance and dedication to the team."` |
+    | summary | `string` | ❌ | Summary of the award or honor | `"Awarded for outstanding performance and dedication to the team."` |
     | description | `string` | ❌ | Detailed description of the award or honor | `"I play a key role in the team and help the team achieve its goals..."` |
 
     <details>
