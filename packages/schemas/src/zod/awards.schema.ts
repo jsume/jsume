@@ -16,7 +16,7 @@ const awardSchema = z.looseObject({
     description: 'Organization or individual who granted the award or honor',
     examples: ['Tech Company Inc.'],
   }),
-  summary: z.string().min(1).meta({
+  summary: z.optional(z.string().min(1)).meta({
     description: 'Summary of the award or honor',
     examples: ['Awarded for outstanding performance and dedication to the team.'],
   }),
