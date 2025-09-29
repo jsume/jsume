@@ -59,5 +59,5 @@ jsume validate -j [...files]
 <!-- Badges -->
 
 [ver-img-src]: <https://img.shields.io/npm/v/%40jsume%2Fcli> "npm version image"
-[dls-img-src]: <https://img.shields.io/npm/dm/%40jsume%2Fcli> "npm version image"
+[dls-img-src]: <https://img.shields.io/npm/dm/%40jsume%2Fcli> "npm downloads image"
 [pkg-href]: <https://npmjs.com/package/@jsume/cli> "npm packge page"
