@@ -3,30 +3,30 @@ packages:
 
 catalogs:
   build:
-    bumpp: ^10.3.1
-    tsdown: ^0.15.9
+    bumpp: ^10.3.2
+    tsdown: ^0.17.3
   eslint:
-    '@antfu/eslint-config': ^6.0.0
-    eslint: ^9.38.0
+    '@antfu/eslint-config': ^6.6.1
+    eslint: ^9.39.1
   testing:
-    vitest: ^4.0.2
+    vitest: ^4.0.15
   types:
-    '@types/node': ^24.9.1
+    '@types/node': ^25.0.1
   typescript:
     typescript: ^5.9.3
   utils:
     ajv: ^8.17.1
     ajv-formats: ^3.0.1
-    ansis: ^4.1.0
+    ansis: ^4.2.0
     cac: ^6.7.14
     esno: '*'
-    execa: ^9.6.0
-    lint-staged: ^16.2.6
+    execa: ^9.6.1
+    lint-staged: ^16.2.7
     restore-cursor: ^5.1.0
     simple-git-hooks: ^2.13.1
-    terminal-link: ^4.0.0
-    tinyglobby: ^0.2.14
-    zod: ^4.1.12
+    terminal-link: ^5.0.0
+    tinyglobby: ^0.2.15
+    zod: ^4.1.13
 
 onlyBuiltDependencies:
   - esbuild

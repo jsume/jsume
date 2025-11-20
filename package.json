@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.6",
   "private": true,
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.25.0",
   "engines": {
     "node": ">=22.0.0"
   },
@@ -19,10 +19,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:eslint",
     "@types/node": "catalog:types",
-    "ajv": "catalog:utils",
-    "ajv-formats": "catalog:utils",
     "bumpp": "catalog:build",
-    "cac": "catalog:utils",
     "eslint": "catalog:eslint",
     "esno": "catalog:utils",
     "execa": "catalog:utils",
@@ -30,8 +27,7 @@
     "simple-git-hooks": "catalog:utils",
     "tsdown": "catalog:build",
     "typescript": "catalog:typescript",
-    "vitest": "catalog:testing",
-    "zod": "catalog:utils"
+    "vitest": "catalog:testing"
   },
   "simple-git-hooks": {
     "pre-commit": "npx esno scripts/prepare.ts && npx lint-staged"
