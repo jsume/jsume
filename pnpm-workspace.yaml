@@ -1,17 +1,21 @@
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
 packages:
   - packages/*
 
 catalogs:
   build:
     bumpp: ^10.3.2
-    tsdown: ^0.17.3
+    tsdown: ^0.18.2
   eslint:
-    '@antfu/eslint-config': ^6.6.1
-    eslint: ^9.39.1
+    '@antfu/eslint-config': ^6.7.3
+    eslint: ^9.39.2
   testing:
-    vitest: ^4.0.15
+    vitest: ^4.0.16
   types:
-    '@types/node': ^25.0.1
+    '@types/node': ^25.0.3
   typescript:
     typescript: ^5.9.3
   utils:
@@ -26,7 +30,7 @@ catalogs:
     simple-git-hooks: ^2.13.1
     terminal-link: ^5.0.0
     tinyglobby: ^0.2.15
-    zod: ^4.1.13
+    zod: ^4.2.1
 
 onlyBuiltDependencies:
   - esbuild

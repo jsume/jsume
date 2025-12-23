@@ -9,7 +9,7 @@
   },
   "scripts": {
     "prepare": "esno scripts/prepare.ts",
-    "build": "pnpm -r --filter=./packages/* run build",
+    "build": "pnpm -r --filter \"./packages/*\" run build",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "release": "bumpp -r && pnpm publish -r",
