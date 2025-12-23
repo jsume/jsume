@@ -1,4 +1,5 @@
 {
+  "$schema": "https://unpkg.com/@jsume/schemas/dist/draft-2020-12.json",
   "basics": {
     "name": "John Doe",
     "label": "Software Engineer",
